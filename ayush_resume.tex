@@ -1,0 +1,209 @@
+% \documentclass[a4paper,11pt]{article}
+
+% % Packages for formatting
+% \usepackage{parskip}
+% \usepackage{graphicx}
+% \usepackage[top=0.3in, bottom=0.2in, left=0.25in, right=0.25in]{geometry}
+% \usepackage{tabularx}
+% \usepackage{enumitem}
+% \usepackage{multirow}
+% \newcolumntype{C}{>{\centering\arraybackslash}X}
+% \usepackage{titlesec}
+% \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+% \titlespacing{\section}{1pt}{2pt}{2pt}
+% \usepackage{hyperref}
+% \usepackage{fontawesome5}
+
+% \begin{document}
+% \pagestyle{empty}
+% \begin{center}
+%     {\Huge \textbf{Ayush Srihari}} \\ \vspace{4pt}
+%     {\small
+%     \underline{\href{http://www.ayushsrihari.wiki}{www.ayushsrihari.wiki}} $|$ 
+%     \underline{\href{mailto:speak2ayushsrihari@gmail.com}{ speak2ayushsrihari@gmail.com}} $|$ 
+%     \underline{\href{https://www.linkedin.com/in/ayush-s-7b500b1a1/}{ linkedin.com/ayush-s-7b500b1a1/}} $|$ 
+%     \underline{\href{https://github.com/gracetownland}{github.com/gracetownland}}
+%     }
+% \end{center}
+% % \begin{tabularx}{\linewidth}{@{}X r@{}}
+% %      \LARGE{Ayush Srihari} \& \multirow{3}{*}{\includegraphics[width=0.4\textwidth]{images/MS Word Footer Logo 3 - png.png}} \\
+% %     {\underline{\href{www.ayushsrihari.wiki}{\faGlobe\ Website}}} $|$ {\underline{\href{mailto:speak2ayushsrihari@gmail.com}{\faEnvelope\ Mail}} $|$ 
+% %     \underline{\href{https://www.linkedin.com/in/ayushsrihari/}{\faLinkedin\  LinkedIn}}$|$
+% %     \underline{\href{https://github.com/gracetownland}{\faGithub\ Github}}} \& \\
+% % \end{tabularx}
+% \section{Education}
+% \begin{tabularx}{\linewidth}{@{}l r@{}}
+%      \textbf{University of British Columbia} \& \hfill Expected graduation: May 2027 \\
+%      B.Sc. in Computer Science -- Dean's List 1x \&  \\
+%     \multicolumn{2}{@{}X@{}}{Relevant Coursework: Data Structures \& Algorithms, Software Engineering, Relational Databases, Networks, Machine Learning, Introduction to AI.}
+% \end{tabularx}
+% % \section{EXPERIENCE}
+
+% % \textbf{AWS Cloud Innovation Centre @ UBC} \hfill Vancouver, BC \\
+% % \textit{Software Developer Intern} \hfill September 2025 -- Present
+% % \begin{itemize}[nosep, itemsep=0pt]
+% %     \item Built open-source \textbf{Generative AI} applications end-to-end for \textbf{3+ sponsor teams}, leveraging \textbf{AWS Lambda, RDS, IAM, Shield, Cognito}, and \textbf{Secrets Manager} to deliver secure and scalable AI/ML solutions
+% %         \item Optimized database infrastructure costs by \textbf{60\%} and reduced connection errors from \textbf{10\%} to < \textbf{3\%} under load, by implementing Database Connection Pooling to multiplex traffic for high-scale serverless functions
+% %     \item Streamlined the \textbf{Docker container lifecycle} by migrating local workflows to a standardized \textbf{AWS CI/CD pipeline} (\textbf{CodeBuild, CodePipeline, ECR}), engineering differential builds that reduced deployment time by \textbf{90\%} and eliminated cross-platform configuration errors
+% % \item Optimized serverless architectures via \textbf{lazy loading} of Python dependencies, \textbf{multi-stage Docker builds} and \textbf{Provisioned Concurrency} reducing \textbf{Lambda} cold start times from over 2 minutes to \textbf{sub-second responses}
+% % \end{itemize}
+% % \textbf{Coast Capital Savings} \hfill Vancouver, BC \\
+% % \textit{Project Manager \& Developer} \hfill January 2025 -- May 2025
+% % \begin{itemize}[nosep, itemsep=0pt]
+% %     \item Led a team of \textbf{8 developers} to deliver a full-stack \textbf{document management platform} for mortgage applications, managing sprint planning, code reviews, and stakeholder communication end-to-end
+% %     \item Architected a serverless \textbf{OCR pipeline} using \textbf{AWS Textract}, \textbf{OpenCV}, and \textbf{ZXing} to extract structured fields and barcodes from multi-format documents (PDF, image, DOCX), supporting both form and government ID document types
+% %     \item Built a \textbf{React + TypeScript} frontend with protected routing, JWT-based session management via \textbf{AWS Cognito}, and role-based access control distinguishing standard users from administrators
+% %     \item Deployed \textbf{10+ AWS Lambda} functions behind \textbf{API Gateway} with a custom authorizer, storing document metadata in \textbf{Aurora Serverless RDS} and raw files across dedicated \textbf{S3} buckets 
+% % \end{itemize}
+% % % \textbf{Coast Capital Savings} \hfill Vancouver, BC \\
+% % % \textit{Project Manager \& Developer} \hfill January 2025 -- May 2025
+% % % \begin{itemize}[nosep, itemsep=0pt]
+% % %     \item Led a team of \textbf{8 developers} to build an \textbf{OCR-based} document processing system for mortgage applications, processing multi-format documents with \textbf{95\% accuracy}
+% % %     \item Designed a data extraction pipeline using \textbf{AWS Lambda} triggered by \textbf{S3 events}, handling \textbf{1,000 documents per hour} and reducing manual processing time by \textbf{75\%}
+% % %     \item Integrated \textbf{AWS Textract} for structured data extraction and implemented \textbf{Cognito} authentication for secure access to document workflows for \textbf{50+ concurrent users}
+% % % \end{itemize}
+
+% % \section{Projects}
+% % \textbf{GenRx -- AI Simulation Platform} \quad \textit{AWS CDK, Bedrock, LangChain, ECS Fargate, AppSync} \hfill March 2026
+% % \begin{itemize}[nosep, leftmargin=2em, itemsep=0pt]
+% % \item Architected a multi-tenant AI simulation platform where students practice clinical decision-making through real-time conversations with \textbf{LLM-driven personas}, powered by \textbf{LangChain RAG} chains over instructor-uploaded documents stored as vector embeddings in \textbf{pgvector}.
+% % \item Engineered a real-time streaming pipeline via \textbf{AppSync GraphQL} subscriptions with asynchronous \textbf{cosine similarity}-based question matching running in background threads, enabling live tagging of student messages against weighted key questions without blocking response generation.
+% % \item Built a multi-step \textbf{debrief generation} engine that deterministically computes scores from pre-matched question data, then orchestrates focused \textbf{Bedrock LLM} calls for summary, feedback rewriting, and answer key comparison, eliminating token overflow from single-prompt approaches.
+% % \item Deployed a \textbf{WebRTC} voice chat system on \textbf{ECS Fargate} bridging Opus audio to \textbf{Amazon Nova Sonic} bidirectional streaming via \textbf{CloudFront}, with a document ingestion pipeline using \textbf{SemanticChunker} and \textbf{Cognito}-based RBAC across three user roles.
+% % \end{itemize}
+
+% % \textbf{OpenED - AI Study Companion} \quad \textit{AWS CDK, Bedrock, Glue, Lambda, LangChain, RAG, Docker} \hfill Dec 2025
+% % \begin{itemize}[nosep, leftmargin=2em, itemsep=0pt]
+% % \item Developed a cloud-native AI study companion sponsored by BCcampus, enabling 100,000+ students and educators to streamline learning and material creation using AWS CDK, Lambda, Bedrock, and a React frontend hosted on Amplify.
+% % \item Built scalable ETL pipelines using AWS Glue and SQS FIFO queues to crawl and process 750+ open textbooks, generating vector embeddings via Cohere Embed v4 with recursive character splitting (1000-char chunks, 200-char overlap) and storing them in PostgreSQL with pgvector for sub-second similarity retrieval across 100,000+ chunks.
+% % \item Architected a real-time streaming response pipeline over WebSockets and API Gateway, parallelizing guardrail checks, chat history initialization, and system prompt retrieval via \texttt{ThreadPoolExecutor}, with cold start optimizations (pre-loaded SSM parameters, pre-warmed DB connections) that reduced end-to-end latency by $\sim$40\%.
+% % \item Integrated on-demand practice material generation (MCQs, flashcards, short answers) within chat workflows, orchestrating asynchronous knowledge retrieval from pgvector, LLM invocation via Bedrock, and WebSocket progress streaming with semantic caching to avoid redundant generation.
+% % \end{itemize}
+% \section{Experience}
+
+% \textbf{AWS Cloud Innovation Centre @ UBC} \hfill Vancouver, BC \\
+% \textit{Software Developer Intern} \hfill September 2025 -- Present
+% \begin{itemize}[nosep]
+%     \item Built \& shipped production ready  \textbf{Generative AI} applications end-to-end for \textbf{3+ sponsor teams}, using \textbf{AWS Lambda, RDS, IAM, Shield, Cognito}, \& \textbf{Secrets Manager} to deliver secure, scalable AI/ML solutions
+%     \item Optimized database infrastructure costs by \textbf{60\%} \& reduced connection errors from \textbf{10\%} to < \textbf{3\%} by implementing database connection pooling for high-scale serverless functions
+%     \item Streamlined the \textbf{Docker container lifecycle} by migrating local workflows to a standardized \textbf{AWS CI/CD pipeline} (\textbf{CodeBuild, CodePipeline, ECR}), reducing deployment time by \textbf{90\%} \& eliminating cross-platform configuration errors
+% \end{itemize}
+
+% \textbf{Coast Capital Savings} \hfill Vancouver, BC \\
+% \textit{Project Manager \& Developer} \hfill January 2025 -- May 2025
+% \begin{itemize}[nosep]
+%     \item Led a team of \textbf{8 developers} to deliver a full-stack \textbf{document management platform} for mortgage applications, managing sprint planning, code reviews, and stakeholder communication end-to-end
+%     \item Architected a serverless \textbf{OCR pipeline} using \textbf{AWS Textract}, \textbf{OpenCV}, \& \textbf{ZXing} to extract structured fields \& barcodes from PDF, image, \& DOCX documents
+%     \item Built a \textbf{React + TypeScript} frontend with protected routing, JWT-based session management via \textbf{AWS Cognito}, \& role-based access control
+%     \item Deployed \textbf{10+ AWS Lambda} functions behind \textbf{API Gateway}, storing metadata in \textbf{Aurora Serverless RDS} \& raw files across dedicated \textbf{S3} buckets
+% \end{itemize}
+
+% \section{Projects}
+% \textbf{GenRx -- AI Simulation Platform} \quad \textit{AWS CDK, Amazon Bedrock, LangChain, ECS Fargate, pgvector} \hfill March 2026
+% \begin{itemize}[nosep, leftmargin=2em]
+% \item Architected a \textbf{multi-tenant} AI platform for \textbf{4+ clinical departments}, managing \textbf{5,000+ vector embeddings} in \textbf{pgvector} with \textbf{sub-100ms retrieval latency} via LangChain RAG pipelines.
+% \item Developed a seamless \textbf{voice-to-voice} interface on \textbf{ECS Fargate} using \textbf{WebSockets} and \textbf{Amazon Nova Sonic 2}, achieving \textbf{sub-200ms} round-trip latency for life-like, bidirectional clinical simulations.
+% \item Engineered an automated \textbf{pedagogical debriefing} module that assesses student-patient interactions against clinical rubrics, generating \textbf{instant performance grading} and feedback using LLM-based evaluation.
+% \end{itemize}
+
+% \textbf{OpenED - AI Study Companion} \quad \textit{AWS CDK, Bedrock, Glue, Lambda, LangChain, RAG, Docker} \hfill Dec 2025
+% \begin{itemize}[nosep, leftmargin=2em]
+%     \item Developed a cloud-native AI companion sponsored by \textbf{BCcampus}, enabling \textbf{100,000+} users to streamline learning using \textbf{AWS CDK, Lambda, \& Bedrock} with a frontend on \textbf{AWS Amplify}
+%     \item Built scalable \textbf{ETL pipelines} using \textbf{AWS Glue} \& \textbf{SQS FIFO} queues to process \textbf{200+} textbooks, generating embeddings via \textbf{Cohere Embed v4} for \textbf{sub-second similarity retrieval} across \textbf{100,000+ chunks} in \textbf{pgvector}
+%     \item Orchestrated asynchronous knowledge retrieval \& \textbf{WebSocket progress streaming} with \textbf{semantic caching} to minimize LLM API overhead \& redundant generation costs
+% \end{itemize}
+% \section{Technical Skills}
+% \textbf{Languages:} TypeScript, JavaScript, Java, C/C++, SQL, Python, HTML, CSS \\
+% \textbf{Frameworks:} Node.js, Express.js, React.js, FastAPI, Flask, LangChain, SQLAlchemy, Tailwind \\
+% \textbf{Databases \& Tools:} AWS, AWS CDK, Docker, Git, PostgreSQL, MongoDB, OpenAPI, REST
+% \vfill
+% \begin{center}
+%     \includegraphics[width=0.9\textwidth]{images/MS Word Footer Logo 3 - png.png}
+% \end{center}
+% \end{document}
+\documentclass[a4paper,11pt]{article}
+
+% Packages for formatting
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[top=0.3in, bottom=0.05in, left=0.25in, right=0.25in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{multirow}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{6pt}{4pt}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\begin{document}
+\pagestyle{empty}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{Ayush Srihari}} \\ \vspace{4pt}
+    {\small
+    \href{https://www.ayushsrihari.wiki/}{ayushsrihari.wiki} $|$ 
+    \href{mailto:speak2ayushsrihari@gmail.com}{speak2ayushsrihari@gmail.com} $|$ 
+    \href{https://linkedin.com/in/ayush-s-7b500b1a1}{linkedin.com/in/ayush-s-7b500b1a1} $|$ 
+    \href{https://github.com/gracetownland}{github.com/gracetownland}
+    }
+\end{center}
+
+% --- Education (Top for Co-op Applications) ---
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+    \textbf{University of British Columbia} & Expected graduation: May 2027 \\
+    B.Sc. in Computer Science --& Vancouver, BC \\
+    \multicolumn{2}{@{}X@{}}{Relevant Coursework: Machine Learning, AI, Data Structures \& Algorithms, Software Eng, Databases, Networks}
+\end{tabularx}
+
+% --- Experience ---
+\section{Experience}
+
+\textbf{AWS Cloud Innovation Centre @ UBC} \hfill Vancouver, BC \\
+\textit{Software Developer Intern} \hfill September 2025 -- Present
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt]
+    \item Built \& shipped \textbf{AI/ML proof-of-concept} applications end-to-end for \textbf{3+ sponsor teams}, rapidly prototyping emerging GenAI models (Claude, Llama, Titan) and presenting findings to stakeholders.
+    \item Developed \textbf{Python automation scripts} for data validation, performance benchmarking, \& model inference testing, reducing manual QA effort by \textbf{40\%} across ML deployment workflows.
+    \item Engineered a \textbf{CI/CD pipeline} (CodeBuild, CodePipeline, ECR) with \textbf{multi-stage Docker builds} for containerized ML services, reducing deployment time by \textbf{90\%} \& eliminating configuration drift.
+    \item Optimized \textbf{ML model serving infrastructure} via Provisioned Concurrency \& connection pooling, reducing cold starts from 2 mins to \textbf{sub-second} and cutting compute costs by \textbf{60\%}.
+\end{itemize}
+
+\textbf{Coast Capital Savings} \hfill Vancouver, BC \\
+\textit{Project Manager \& Developer} \hfill January 2025 -- May 2025
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt]
+    \item Led a team of \textbf{8 developers}, managing sprint planning, code reviews, \& stakeholder demos to deliver a full-stack document processing platform on schedule.
+    \item Architected a serverless \textbf{OCR pipeline} using AWS Textract \& OpenCV to extract structured fields from multi-format documents (PDF, Image, DOCX) with \textbf{95\% accuracy}.
+    \item Wrote comprehensive \textbf{pipeline documentation} \& integration tests, enabling seamless onboarding and reducing QA regression cycles by \textbf{30\%}.
+    \item Deployed \textbf{10+ AWS Lambda} functions behind API Gateway with automated infrastructure provisioning, storing metadata in Aurora Serverless RDS \& raw files in S3.
+\end{itemize}
+
+% --- Projects ---
+\section{Projects}
+
+\textbf{GenRx -- AI Simulation Platform} \quad \textit{Python, AWS CDK, Bedrock, LangChain, ECS Fargate, pgvector} \hfill March 2026
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt]
+    \item Experimented with multiple \textbf{LLM models} (Claude, Nova Sonic) to identify optimal configurations for clinical simulations, documenting trade-offs in latency, accuracy, \& cost for stakeholder review.
+    \item Built a \textbf{scalable data pipeline} ingesting clinical documents via PyMuPDF \& Cohere embeddings, generating \textbf{5,000+ vector embeddings} in pgvector with \textbf{sub-100ms} retrieval for RAG inference.
+    \item Developed \textbf{Python evaluation scripts} to benchmark model outputs against clinical rubrics, automating performance reporting across \textbf{4+ departments}.
+\end{itemize}
+
+\textbf{OpenED -- AI Study Companion} \quad \textit{Python, AWS CDK, Bedrock, Glue, Lambda, LangChain, Docker} \hfill Dec 2025
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt]
+    \item Engineered \textbf{ETL data pipelines} using AWS Glue (Scrapy) \& SQS FIFO queues to crawl, chunk, \& embed \textbf{200+ textbooks} into pgvector, ensuring data quality via schema validation \& dead-letter queues.
+    \item Implemented \textbf{semantic caching} (cosine similarity @ 0.85 threshold) to eliminate redundant LLM calls, reducing inference costs by \textbf{60--70\%} while maintaining response quality.
+    \item Automated \textbf{model performance monitoring} with CloudWatch custom metrics tracking cold start duration, inference latency, \& token usage across multiple Bedrock model configurations.
+\end{itemize}
+
+% --- Technical Skills ---
+\section{Technical Skills}
+\textbf{Languages:} Python, TypeScript, JavaScript, Java, C/C++, SQL, Bash \\
+\textbf{AI/ML:} LangChain, RAG, pgvector, Amazon Bedrock, Prompt Engineering \\
+\textbf{Frameworks \& Tools:} React, Node.js, FastAPI, Express.js, Tailwind \\
+\textbf{Cloud \& Infrastructure:} AWS (CDK, Lambda, ECS, Glue, Bedrock, RDS, SQS), Docker, CI/CD, Git, PostgreSQL
+
+
+
+\end{document}
